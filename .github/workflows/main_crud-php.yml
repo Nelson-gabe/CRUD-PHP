@@ -63,4 +63,4 @@ jobs:
           app-name: 'CRUD-PHP'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B91AEE56F5654B9D86728500E761F3BE }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E6B78B8F760A4182BB417725C632B9F5 }}
