@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/styles.css">
+    <title>La Mamalona</title>
+</head>
+<body>
+    <h1>CRUD</h1>
+    <br>
+    <span>
+        <div class="crear-div">
+            <h2 class="crear-h2">Crear</h2>
+                <form class="crear-form" action="program.php" method="post">
+                    cedula <input type="number" name="cedula">
+                    nombre <input type="text" name="nombre">
+                    apellido <input type="text" name="apellido">
+                    <input type="submit" name="ingresar">
+                </form>
+        </div>
+
+        <div class="verTabla">
+            <h2 class="ver">Leer</h2>
+                <form action="VerTabla.php" method="get">
+                    Da click aca para ver la tabla
+                    <input type="submit" name="Ver" value="ver">
+                </form>
+        </div>
+        
+        <div class="eliminarUsuario">
+            <h2 class="eliminar">Eliminar</h2>
+                <form action="eliminar.php" method="post">
+                    Ingrese la cedula para eliminar todos los datos <input type="text" name="cedula_eliminar">
+                    <input type="submit" name="eliminar" value="Eliminar">
+                </form>
+        </div>
+    
+        <div class="actualizarUsuario">
+            <h2 class="actualizar">Actualizar</h2>
+                <form action="Actualizar.php" method="post">
+                    Cedula a actualizar <input type="number" name="cedula_actualizar">
+                    Nuevo nombre <input type="text" name="nuevo_nombre">
+                    Nuevo apellido <input type="text" name="nuevo_apellido">
+                    <input type="submit" name="actualizar" value="Actualizar">
+                </form>
+        </div>
+    </span>
+</body>
+</html>
